@@ -1,0 +1,119 @@
+@import 'modules/normalize.scss'
+@import 'modules/reset.scss'
+@import 'variables/flat-ui-colors'
+@import 'variables/material-palette'
+@import url('https://fonts.googleapis.com/css?family=Bungee|Amiko')
+
+html
+	overflow-x: hidden
+	overflow-y: auto
+	perspective: 1px
+.jumbotron
+	background-image: url('https://static.pexels.com/photos/69731/pexels-photo-69731.jpeg')
+	background-attachment: fixed
+	background-position: 
+	background-repeat: no-repeat
+	background-size: cover
+	height: 100%
+	width: auto
+	display: flex
+	justify-content: center
+.text-content 
+	color: #F2F2F2
+	flex: 1
+	max-width: 960px
+	background-color: rgba(0,0,0,0.45)
+	padding: 0px 50px
+	transform: translateZ(0)
+	backdrop-filter: blur(10px)
+	box-shadow: 0px 0px 30px 10px #222
+	h3
+		text-align: center
+		border: 1px solid
+		padding: 10px
+		font-size: 3em
+		font-family: "Bungee", sans-serif
+
+	p
+		font-size: 1rem
+		font-family: "Amiko", serif
+.image-container
+	display: flex
+	background-color: rgba(255,255,255,0.5)
+	padding: 20px
+	justify-content: space-between
+	flex-wrap: wrap
+.image
+	flex: 1
+	margin: auto
+	min-height: 240px
+	min-width: 200px
+	background-size: cover
+	background-position: center
+.navbar
+	ul
+		list-style: none
+		list-style-type: none
+		padding: 0 
+		margin: 0
+		text-align: right
+		li
+			position: relative
+			color: #ddd
+			background-color: rgba(255,255,255,0.3)
+			padding: 5px 5px
+			transition: transform 300ms
+			a
+				text-decoration: none
+				color: inherit
+			&:hover
+				color: #222
+				transform: 
+	width: 100px
+	border-right: 2px solid #ddd
+	border-bottom: 2px solid #ddd
+	padding: 0
+	margin: 0
+	position: fixed
+	left: 0
+	top: 0
+.sidebar
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	background-color: rgba(0,0,0,0.6);
+	width: 250px 
+	ul
+		margin-top: 30px
+		li
+			list-style: none
+			color: rgba(255,255,255,0.8)
+			margin-bottom: 20px
+			font-size: 18px
+			border-bottom: 1px outset #eee
+			font-family: "Amiko", serif
+			&:hover
+				color: rgba(255,255,255,1)
+				cursor: pointer
+#sidebar-toggle
+	position: relative
+	z-index: 100
+	color: white
+	top: 20px
+	left: 280px
+	font-size: 24px
+	&:hover
+		color: rgba(255,255,255,0.8)
+		cursor: pointer
+.sidenav
+	display: flex
+	position: fixed
+	top: 0
+	left: 0
+	transform: translateX(-250px)
+	transition: transform 300ms ease-in
+	height: 100%
+.out
+	transform: translateX(0px)
+
